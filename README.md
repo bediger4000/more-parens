@@ -27,6 +27,11 @@ recursing, then popping any prefix paren off the prefix-characters-string.
 Validate the prefix-characters string so composed
 when the recursion runs out of input characters.
 
+[My code](a1.go) doesn't strictly meet the problem statement,
+in that it doesn't give a plain "Yes, balanced" or "No, not balanced" answer.
+It does print out all possible balanced parens strings that
+it can generate from the alternatives.
+
 ## Interview Analysis
 
 The candidate should talk through this one, if possible.
