@@ -52,6 +52,7 @@ Enumerating potential test cases would be advisable:
 * `()`, `(*)` `(**)` would be good, see if empty string works.
 * `*)`, `(*` would check if code examines both parens.
 * Multiple-asterisk cases: `((*)*`, `()*()*`, `(()*()*` seem like a good thing.
+* Try some unbalanced cases: `)(`, `)*(` to see if your validating works.
 
 Looks like it's possible to have multiple balanced strings
 for inputs with multiple asterisks.
