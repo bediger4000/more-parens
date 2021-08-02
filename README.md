@@ -38,9 +38,13 @@ The candidate should talk through this one, if possible.
 It seemed easy to mess up all the prefix-character removals,
 and composing prefix-character-strings.
 
-[Validation of parens balance](https://github.com/bediger4000/binary-tree-odd-string-rep)
-is itself seemingly a common "[Easy]"
-rated interview question.
+Validation of parens balance
+is itself seemingly a common "easy"-rated interview question.
+I used a parity-counting algorithm that starts with
+zero, adds 1 for every '(' and subtracts 1 for every ')'.
+If the parity ends at something other than zero,
+or ever goes negative, the string does not contain balanced parens.
+
 This may be why this problem is rated "[Hard]".
 You have to have 2 algorithms,
 one to generate candidates based on substituting for '\*',
