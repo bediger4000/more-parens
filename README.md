@@ -38,7 +38,7 @@ The candidate should talk through this one, if possible.
 It seemed easy to mess up all the prefix-character removals,
 and composing prefix-character-strings.
 
-[Validation of parens balance]((https://github.com/bediger4000/binary-tree-odd-string-rep)
+[Validation of parens balance](https://github.com/bediger4000/binary-tree-odd-string-rep)
 is itself seemingly a common "[Easy]"
 rated interview question.
 This may be why this problem is rated "[Hard]".
@@ -50,7 +50,6 @@ I'm guessing that catching ')(' as unbalanced is one of the
 things an interviewer would look for.
 It's probably good to include test cases for that.
 
-
 Enumerating potential test cases would be advisable:
 
 * `(()*`, `(*)`, `)*(` are given in the clarifying example.
@@ -58,6 +57,15 @@ Enumerating potential test cases would be advisable:
 * `*)`, `(*` would check if code examines both parens.
 * Multiple-asterisk cases: `((*)*`, `()*()*`, `(()*()*` seem like a good thing.
 * Try some unbalanced cases: `)(`, `)*(` to see if your validating works.
+
+I'll buy this as a "[Hard]" daily coding problem.
+You have to understand 2 different algorithms to solve the problem.
+Thankfully, you don't need any physical insight to solve this one.
+
+I think the interviewer might expect candidates that don't
+see or remember a "counting" do-parens-balance validity check
+to do some flailing, especially if they decide to use a destructive
+algorithm for checking balance.
 
 Looks like it's possible to have multiple balanced strings
 for inputs with multiple asterisks.
