@@ -75,3 +75,26 @@ Looks like it's possible to have multiple balanced strings
 for inputs with multiple asterisks.
 Is it possible to have a single-asterisk input that gives
 multiple result balanced strings?
+
+# Related Daily Coding Problem
+
+Haven't done this one yet.
+
+## Daily Coding Problem: Problem #984 [Hard]
+
+This problem was asked by Facebook.
+
+Given a string of parentheses,
+find the balanced string that can be produced from it using the minimum number
+of insertions and deletions.
+If there are multiple solutions,
+return any of them.
+
+For example,
+given "(()", you could return "(())".
+Given "))()(", you could return "()()()()".
+
+## Analysis
+
+This is roughly the same as Problem #937,
+but does not give an '\*' where you should try to insert something.
